@@ -180,4 +180,11 @@ void main()
 	clock1.incrementHours();
 	cout << "clock1 after using incrementHours function:" << endl;
 	clock1.printTime();
+
+	cout << "Using equalTime function:" << endl;
+	(clock1.equalTime(clock2) == 1) ? cout << "Equal" << endl << endl : cout << "Not Equal" << endl << endl;
+
+	cout << "Using equalTime function after changing values:" << endl;
+	clock1 = clock2;
+	(clock1.equalTime(clock2) == 1) ? cout << "Equal" << endl << endl : cout << "Not Equal" << endl << endl;
 }
